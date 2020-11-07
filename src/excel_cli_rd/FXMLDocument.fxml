@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="389.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="excel_cli_rd.FXMLDocumentController">
+   <children>
+      <TabPane prefHeight="389.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="    Client    ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane fx:id="tab_pane" prefHeight="360.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab fx:id="GP" text="Generateur referentiels de parametrage complet">
+                                 <content>
+                                    <AnchorPane fx:id="tab1" minHeight="0.0" minWidth="0.0" prefHeight="331.0" prefWidth="569.0" style="-fx-background-color: #FEFEFE;">
+                                       <children>
+                                          <TextField fx:id="txft_5" layoutX="31.0" layoutY="176.0" prefHeight="25.0" prefWidth="388.0" promptText="Fichier de libelles anomalies CEXP">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="txft_4" layoutX="31.0" layoutY="138.0" prefHeight="25.0" prefWidth="388.0" promptText="Fichier de libelles anomalies R&amp;D">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="txft_3" layoutX="31.0" layoutY="100.0" prefHeight="25.0" prefWidth="388.0" promptText="Fichier de ref parametrage CEXP">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="txft_2" layoutX="31.0" layoutY="63.0" prefHeight="25.0" prefWidth="388.0" promptText="Fichier de ref parametrage R&amp;D">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <Button fx:id="bouton_parcourir_5" layoutX="453.0" layoutY="176.0" mnemonicParsing="false" onAction="#bouton_parcourir_5" text="Parcourir" />
+                                          <Button fx:id="bouton_parcourir_4" layoutX="453.0" layoutY="138.0" mnemonicParsing="false" onAction="#bouton_parcourir_4" text="Parcourir" />
+                                          <Button fx:id="bouton_parcourir_3" layoutX="453.0" layoutY="100.0" mnemonicParsing="false" onAction="#bouton_parcourir_3" text="Parcourir" />
+                                          <Button fx:id="bouton_parcourir_2" layoutX="453.0" layoutY="63.0" mnemonicParsing="false" onAction="#bouton_parcourir_2" text="Parcourir" />
+                                          <TextField fx:id="txft_6" layoutX="31.0" layoutY="217.0" prefHeight="25.0" prefWidth="388.0" promptText="Enregistrement Fichiers">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <Button fx:id="bouton_parcourir_6" layoutX="453.0" layoutY="217.0" mnemonicParsing="false" onAction="#bouton_parcourir_6" text="Parcourir" />
+                                          <Label layoutX="17.0" layoutY="67.0" text="*" textFill="#e00a0a">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="17.0" layoutY="104.0" text="*" textFill="#e00a0a">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="17.0" layoutY="221.0" text="*" textFill="#e00a0a">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="bouton_ouvrir_excel" layoutX="118.0" layoutY="289.0" mnemonicParsing="false" onAction="#bouton_ouvrir_excel" prefHeight="25.0" prefWidth="177.0" text="Ouvrir l'Excel">
+                                             <font>
+                                                <Font name="System Bold Italic" size="12.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fx:id="img" fitHeight="190.0" fitWidth="289.0" layoutX="544.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pss.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab fx:id="GC" text="Generateur Composants a livrer">
+                                 <content>
+                                    <AnchorPane fx:id="tab2" minHeight="0.0" minWidth="0.0" prefHeight="331.0" prefWidth="569.0" style="-fx-background-color: #FEFEFE;">
+                                       <children>
+                                          <TextField fx:id="txft_7" layoutX="31.0" layoutY="28.0" prefHeight="25.0" prefWidth="388.0" promptText="Chemin de reference">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="txft_8" layoutX="32.0" layoutY="100.0" prefHeight="25.0" prefWidth="388.0" promptText="Fichier de reference">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <Button fx:id="bouton_parcourir_7" layoutX="453.0" layoutY="28.0" mnemonicParsing="false" onAction="#bouton_parcourir_7" text="Parcourir" />
+                                          <Button fx:id="bouton_parcourir_8" layoutX="453.0" layoutY="103.0" mnemonicParsing="false" onAction="#bouton_parcourir_8" text="Parcourir" />
+                                          <Button fx:id="bouton_ouvrir_excel1" layoutX="127.0" layoutY="490.0" mnemonicParsing="false" onAction="#bouton_ouvrir_excel" prefHeight="25.0" prefWidth="177.0" text="Ouvrir l'Excel" />
+                                          <TextField fx:id="txft_9" layoutX="31.0" layoutY="168.0" prefHeight="25.0" prefWidth="388.0" promptText="Enregistrement Fichiers">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <Button fx:id="bouton_parcourir_9" layoutX="453.0" layoutY="168.0" mnemonicParsing="false" onAction="#bouton_parcourir_9" text="Parcourir" />
+                                          <Label layoutX="17.0" layoutY="32.0" text="*" textFill="#e00a0a">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="17.0" layoutY="180.0" text="*" textFill="#e00a0a">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="17.0" layoutY="104.0" text="*" textFill="#e00a0a">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fx:id="img2" fitHeight="192.0" fitWidth="271.0" layoutX="557.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pss.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Button fx:id="bouton_ouvrir_excel_2" layoutX="137.0" layoutY="261.0" mnemonicParsing="false" onAction="#bouton_ouvrir_excel_2" prefHeight="25.0" prefWidth="177.0" text="Ouvrir l'Excel">
+                                             <font>
+                                                <Font name="System Bold Italic" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab fx:id="WD" text="Word">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FEFEFE;">
+                                       <children>
+                                          <ImageView fx:id="img3" fitHeight="199.0" fitWidth="289.0" layoutX="522.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pss.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Button fx:id="bouton_ouvrir_word" layoutX="149.0" layoutY="143.0" mnemonicParsing="false" onAction="#bouton_ouvrir_word" prefHeight="25.0" prefWidth="177.0" text="Ouvrir le Word">
+                                             <font>
+                                                <Font name="System Bold Italic" size="12.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fx:id="img4" fitHeight="25.0" fitWidth="37.0" layoutX="112.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@word.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="im" text="    R&amp;D    ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane fx:id="tab_pane1" prefHeight="360.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab fx:id="GP1" text="Generateur listes habillage">
+                                 <content>
+                                    <AnchorPane fx:id="tab11" minHeight="0.0" minWidth="0.0" prefHeight="331.0" prefWidth="569.0" style="-fx-background-color: #FEFEFE;">
+                                       <children>
+                                          <TextField fx:id="txft_11" layoutX="31.0" layoutY="28.0" prefHeight="25.0" prefWidth="388.0" promptText="Chemin ">
+                                             <font>
+                                                <Font name="System Bold Italic" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="txft_21" layoutX="31.0" layoutY="89.0" prefHeight="25.0" prefWidth="388.0" promptText="Fichier">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <Button fx:id="bouton_parcourir_10" layoutX="453.0" layoutY="28.0" mnemonicParsing="false" onAction="#bouton_parcourir_10" text="Parcourir" />
+                                          <Button fx:id="bouton_parcourir_11" layoutX="453.0" layoutY="92.0" mnemonicParsing="false" onAction="#bouton_parcourir_11" text="Parcourir" />
+                                          <Label layoutX="17.0" layoutY="32.0" text="*" textFill="#e00a0a">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="17.0" layoutY="96.0" text="*" textFill="#e00a0a">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="17.0" layoutY="157.0" text="*" textFill="#e00a0a">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="bouton_ouvrir_excel1" layoutX="118.0" layoutY="289.0" mnemonicParsing="false" onAction="#bouton_ouvrir_excel_3" prefHeight="25.0" prefWidth="177.0" text="Ouvrir l'Excel">
+                                             <font>
+                                                <Font name="System Bold Italic" size="12.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fx:id="img5" fitHeight="190.0" fitWidth="289.0" layoutX="544.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pss.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ComboBox fx:id="Type" layoutX="32.0" layoutY="150.0" prefHeight="25.0" prefWidth="387.0" promptText="Type" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab fx:id="GC1" text="Generateur compil masse">
+                                 <content>
+                                    <AnchorPane fx:id="tab21" minHeight="0.0" minWidth="0.0" prefHeight="331.0" prefWidth="569.0" style="-fx-background-color: #FEFEFE;">
+                                       <children>
+                                          <TextField fx:id="txft_71" layoutX="31.0" layoutY="28.0" prefHeight="25.0" prefWidth="388.0" promptText="Chemin de reference">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="txft_81" layoutX="32.0" layoutY="74.0" prefHeight="25.0" prefWidth="388.0" promptText="Fichier de reference">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <Button fx:id="bouton_parcourir_12" layoutX="453.0" layoutY="28.0" mnemonicParsing="false" onAction="#bouton_parcourir_12" text="Parcourir" />
+                                          <Button fx:id="bouton_parcourir_13" layoutX="453.0" layoutY="77.0" mnemonicParsing="false" onAction="#bouton_parcourir_13" text="Parcourir" />
+                                          <Button fx:id="bouton_ouvrir_excel11" layoutX="127.0" layoutY="490.0" mnemonicParsing="false" onAction="#bouton_ouvrir_excel" prefHeight="25.0" prefWidth="177.0" text="Ouvrir l'Excel" />
+                                          <Label layoutX="17.0" layoutY="32.0" text="*" textFill="#e00a0a">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="17.0" layoutY="81.0" text="*" textFill="#e00a0a">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fx:id="img6" fitHeight="192.0" fitWidth="271.0" layoutX="557.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pss.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Button fx:id="bouton_ouvrir_excel_4" layoutX="137.0" layoutY="250.0" mnemonicParsing="false" onAction="#bouton_ouvrir_excel_4" prefHeight="25.0" prefWidth="177.0" text="Ouvrir l'Excel">
+                                             <font>
+                                                <Font name="System Bold Italic" size="12.0" />
+                                             </font>
+                                          </Button>
+                                          <ComboBox fx:id="combo1" layoutX="32.0" layoutY="122.0" prefHeight="25.0" prefWidth="388.0" promptText="Compilation pgms R&amp;D" />
+                                          <ComboBox fx:id="combo2" layoutX="32.0" layoutY="168.0" prefHeight="25.0" prefWidth="388.0" promptText="Compilation pgms CEXP" />
+                                          <Label layoutX="17.0" layoutY="135.0" text="*" textFill="#e00a0a">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="17.0" layoutY="172.0" text="*" textFill="#e00a0a">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
